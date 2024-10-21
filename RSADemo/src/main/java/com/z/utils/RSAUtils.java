@@ -9,6 +9,9 @@ import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * RSA非对称加解密
+ */
 public class RSAUtils {
     public static final String PUBLIC_KEY = "public_key";
     public static final String PRIMARY_KEY = "primary_key";
