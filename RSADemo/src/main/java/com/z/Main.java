@@ -17,7 +17,7 @@ public class Main {
         System.out.println("原文:" + content);
         //公钥加密
         String encrypt = RSAUtils.encryptWithPublicKey(content, keyMap.get(RSAUtils.PUBLIC_KEY));
-        System.out.println("RSA密文:" + encrypt);
+        System.out.println("RSA密文:" + encrypt + " 长度:" + encrypt.length());
         //私钥解密
         String decrypt = RSAUtils.decryptWithPrivateKey(encrypt, keyMap.get(RSAUtils.PRIMARY_KEY));
         System.out.println("RSA明文:" + decrypt);
